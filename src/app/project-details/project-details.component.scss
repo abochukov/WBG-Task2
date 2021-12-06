@@ -1,8 +1,8 @@
+$blue:#0976bf;
+
 .wrapper {
     width: 75%;
 }
-
-
 
 .menu ul {
     padding: 10px 0;
@@ -14,7 +14,7 @@
 
     a {
         text-decoration: underline;
-        color: #0976bf;
+        color: $blue;
     }
 }
 
@@ -25,18 +25,18 @@
     margin: 10px 0;
 
     ::placeholder {
-        color: #0976bf;
+        color: $blue;
         font-weight: bold;
         opacity: 1; /* Firefox */
       }
       
       :-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: #0976bf;
+        color: $blue;
         font-weight: bold;
       }
       
       ::-ms-input-placeholder { /* Microsoft Edge */
-        color: #0976bf;
+        color: $blue;
         font-weight: bold;
       }
 }

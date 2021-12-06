@@ -10,7 +10,6 @@
     align-items: center;
 }
 
-
 .container-fluid {
     height: 100%;
     background: #b2c8dc;
@@ -22,7 +21,7 @@
         height: 100%;
         margin: 0;
 
-        .col-3, .col-9 {
+        .col-lg-3, .col-lg-9 {
             padding: 0;
             margin: 0;
         }
@@ -34,6 +33,7 @@
     justify-content: center;
     align-items: center;
     height: 60px;
+    left: 0;
     background: #525a68;
     color: #fff;
     font-size: 22px;
@@ -50,8 +50,7 @@
     height: 100%;
     background: #002244;
     color: #fff;
-    
-   
+       
      h3 {
         padding-top: 30%;
         padding-bottom: 30%;
@@ -105,12 +104,6 @@
     }
 }
 
-.title-section {
-    text-align: center;
-    padding: 50px 15px;
-    margin-bottom: 30px;
-}
-
 .footer {
     position: fixed;
     bottom: 0;
@@ -134,3 +127,13 @@
         }
     }
 }
+
+/* 
+This can be discussed with designer for example. At least to me looks better that way
+but it depends on importance of the information 
+*/
+@media (max-width: 576px) { 
+    .footer .left-side-info {
+        display: none;
+    }
+ }
