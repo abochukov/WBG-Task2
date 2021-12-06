@@ -8,12 +8,14 @@
                     <h1>Basic Sticky Sidebar with Bootstrap 4</h1>
                 </div>
             </div> -->
-            <div class="col-1">
+            <div class="col-3">
               <div class="sidebar-item">
                 <div class="make-me-sticky">
                   <h3>
-                    <fa-icon [icon]="faSearch"></fa-icon>
-                    <span>Explore</span>
+                    <a  (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+                      <fa-icon [icon]="faSearch"></fa-icon>
+                      <span>Explore</span>
+                    </a>
                   </h3>
                   <h3>
                     <fa-icon [icon]="faChartLine"></fa-icon>
@@ -26,11 +28,22 @@
                   
                 </div>
               </div>
+
+              <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" class="detail-info">
+                <div class="card">
+                  <div class="card-body">
+                    <app-project-details></app-project-details>
+                  </div>
+                </div>
+              </div>
+
             </div>
+    
   
-            <div class="col-11">
+            <div class="col-9">
               <div class="content-section">
                   <h2>Content Section</h2>
+                 
               </div>
             </div>
         </div>
