@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faChartLine, faSatellite, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faChartLine, faGlobe, faSatellite, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +7,12 @@ import { faChartLine, faSatellite, faSearch } from '@fortawesome/free-solid-svg-
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'wbg';
-  faSearch = faSearch;
   faChartLine = faChartLine;
+  faGlobe = faGlobe;
   faSatellite = faSatellite;
+  faSearch = faSearch;
+  
+  title = 'World Bank';
 
-  public isCollapsed = false;
+  public isCollapsed = true;
 }

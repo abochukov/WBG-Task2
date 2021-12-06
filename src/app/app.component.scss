@@ -28,10 +28,23 @@
         }
     }
 }
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background: #525a68;
+    color: #fff;
+    font-size: 22px;
+
+    fa-icon {
+        padding-right: 10px
+    }
+}
   
 .sidebar-item {
     position: absolute;
-    top: 0;
     left: 0;
     width: 25%;
     height: 100%;
@@ -71,6 +84,7 @@
     position: sticky;
     top: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 .make-me-sticky :hover {

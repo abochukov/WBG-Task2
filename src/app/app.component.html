@@ -9,28 +9,34 @@
                 </div>
             </div> -->
             <div class="col-3">
-              <div class="sidebar-item">
-                <div class="make-me-sticky">
-                  <h3>
-                    <a  (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-                      <fa-icon [icon]="faSearch"></fa-icon>
-                      <span>Explore</span>
-                    </a>
-                  </h3>
-                  <h3>
-                    <fa-icon [icon]="faChartLine"></fa-icon>
-                    <span>Analysis</span>
-                  </h3>
-                  <h3>
-                    <fa-icon [icon]="faSatellite"></fa-icon>
-                    <span>Imagery</span>
-                  </h3>
-                  
-                </div>
+              <div class="header">
+                <fa-icon [icon]="faGlobe"></fa-icon>
+                <span>World Bank Intranet | Maps</span>
               </div>
-
-              <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" class="detail-info">
-                    <app-project-details></app-project-details>
+              <div class="sidebar-wrapper">
+                <div class="sidebar-item">
+                  <div class="make-me-sticky">
+                    <h3>
+                      <a  (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+                        <fa-icon [icon]="faSearch"></fa-icon>
+                        <span>Explore</span>
+                      </a>
+                    </h3>
+                    <h3>
+                      <fa-icon [icon]="faChartLine"></fa-icon>
+                      <span>Analysis</span>
+                    </h3>
+                    <h3>
+                      <fa-icon [icon]="faSatellite"></fa-icon>
+                      <span>Imagery</span>
+                    </h3>
+                    
+                  </div>
+                </div>
+  
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" class="detail-info">
+                      <app-project-details></app-project-details>
+                </div>
               </div>
 
             </div>
