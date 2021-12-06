@@ -12,5 +12,5 @@ export class AppComponent {
   faChartLine = faChartLine;
   faSatellite = faSatellite;
 
-  public isCollapsed = true;
+  public isCollapsed = false;
 }

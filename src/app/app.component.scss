@@ -16,12 +16,15 @@
     background: #b2c8dc;
     width: 100%;
     margin: 0;
+    padding: 0;
 
     .row {
         height: 100%;
+        margin: 0;
 
-        .col-11 {
+        .col-3, .col-9 {
             padding: 0;
+            margin: 0;
         }
     }
 }
